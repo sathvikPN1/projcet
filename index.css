@@ -1,0 +1,221 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .login {
+    float: right;
+    background-color: #555;
+}
+
+/* Footer Styles */
+.footer-distributed{
+    background-color: #292c2f;
+    color: white;
+    text-align: left;
+    padding: 50px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+    width: 30%;
+}
+
+.footer-distributed .footer-center{
+    width: 30%;
+}
+
+.footer-distributed .footer-right{
+    width: 37%;
+}
+
+.footer-distributed h3{
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+}
+
+.footer-distributed .footer-links{
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Icons */
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* Section 1 Specific Styles */
+#home {
+    background-image: url('lawpic1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* May adjust or remove based on exact needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+.chat-now-btn {
+    padding: 15px 30px; /* Comfortable padding */
+    font-size: 20px; /* Visible font size */
+    color: #ffffff; /* White text color */
+    background-color: #A44D17; /* Vibrant blue background */
+    border: none; /* No border */
+    border-radius: 25px; /* Round corners */
+    cursor: pointer; /* Cursor changes to pointer to indicate clickability */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+    text-transform: uppercase; /* Makes the text uppercase for emphasis */
+    font-weight: bold; /* Bold text */
+    letter-spacing: 1px; /* Spacing between letters for better readability */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+.chat-now-btn:hover {
+    background-color: #A44D17; /* Darker shade of blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the button to attract attention */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Enhances shadow for a lifting effect */
+}
+
+
+.chat-now-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #A44D17;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-now-btn:hover {
+    background-color: #dd8046;
+}
+
+
+
+/* Section 3 Specific Styles */
+/* Card Container */
+/* Features Section Background */
+.features-section {
+    background-color: #e8f0fe; /* Light blue background for contrast */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    gap: 20px; /* Space between cards */
+}
+
+/* Feature Cards Style */
+.feature-card {
+    width: 30%;
+    background: linear-gradient(145deg, #ffffff, #d7e1ec);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #d1d9e6; /* Subtle border */
+}
+
+.feature-card i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color:  #A44D17; /* Vibrant icon color */
+}
+
+.feature-card h3 {
+    color: #333333;
+    margin: 10px 0 15px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 45%; /* Adjust card width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-card {
+        width: 90%; /* Full width on very small screens */
+    }
+}
+
+
